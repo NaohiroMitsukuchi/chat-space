@@ -1,1 +1,87 @@
-<メインバー>
+.ChatMain
+  .RightHeader
+    .HeaderGroup
+      .HeaderGroup__groupName
+        sample
+      %ul.HeaderGroup__memberList
+        Member : 
+        %li.HeaderGroup__memberList--member
+          naohiro
+        %li.HeaderGroup__memberList--member
+          takashi
+    = link_to "#", class: "RightHeader__editBtn" do
+      Edit
+  .MessageField
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__name
+          naohiro
+        .MessageInfo__date
+          2020年6月28日 16時25分
+      .Message
+        %p.Message__content
+          hello!! How are u?
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__name
+          takashi
+        .MessageInfo__date
+          2020年6月28日 16時26分
+      .Message
+        %p.Message__content
+          Fine! How about you?
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__name
+          naohiro
+        .MessageInfo__date
+          2020年6月28日 16時27分
+      .Message
+        %p.Message__content
+          Not bad.
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__name
+          naohiro
+        .MessageInfo__date
+          2020年6月28日 16時27分
+      .Message
+        %p.Message__content
+          Not bad.
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__name
+          naohiro
+        .MessageInfo__date
+          2020年6月28日 16時27分
+      .Message
+        %p.Message__content
+          Not bad.
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__name
+          naohiro
+        .MessageInfo__date
+          2020年6月28日 16時27分
+      .Message
+        %p.Message__content
+          Not bad.
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__name
+          naohiro
+        .MessageInfo__date
+          2020年6月28日 16時27分
+      .Message
+        %p.Message__content
+          Not bad.
+  .Footer
+    .Form
+      .FormContents
+        %input.FormContents__message{:placeholder => "type a message", :type => "text", }
+        %label.FormContents__imageLabel
+          = icon('far', 'image', class: 'FormContents__imageIcon')
+          %input{type: "file", class: "FormContents__imageFile"} 
+      %input.Form__submitBtn{:value => "Send", :type => "submit"}
+
+      
