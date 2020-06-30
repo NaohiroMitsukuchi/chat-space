@@ -78,10 +78,10 @@
   .Footer
     .Form
       .FormContents
-        %input.FormContents__message{:placeholder => "type a message", :type => "text", }
+        %input.FormContents__message{placeholder: "type a message", type: "text", }
         %label.FormContents__imageLabel
           = icon('far', 'image', class: 'FormContents__imageIcon')
           %input{type: "file", class: "FormContents__imageFile"} 
-      %input.Form__submitBtn{:value => "Send", :type => "submit"}
+      %input.Form__submitBtn{value: "Send", type: "submit"}
 
       
