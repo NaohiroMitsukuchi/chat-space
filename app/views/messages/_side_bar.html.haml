@@ -2,11 +2,11 @@
   .LeftHeader
     .HeaderItems
       .HeaderItems__userName
-        naohiro
+        = current_user.name
       .HeaderItems__iconList
         = link_to "#", class: "HeaderItems__iconList--icon" do
           = icon('fas', 'edit')
-        = link_to "#", class: "HeaderItems__iconList--icon" do
+        = link_to edit_user_path(current_user), class: "HeaderItems__iconList--icon" do
           = icon('fas', 'cog')
   .GroupList
     .Group
