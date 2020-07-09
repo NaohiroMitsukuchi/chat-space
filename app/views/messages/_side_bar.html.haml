@@ -4,23 +4,17 @@
       .HeaderItems__userName
         = current_user.name
       .HeaderItems__iconList
-        = link_to "#", class: "HeaderItems__iconList--icon" do
+        = link_to new_group_path, class: "HeaderItems__iconList--icon" do
           = icon('fas', 'edit')
         = link_to edit_user_path(current_user), class: "HeaderItems__iconList--icon" do
           = icon('fas', 'cog')
   .GroupList
-    .Group
-      .Group__name
-        sample
-      .Group__message
-        hello!!
-    .Group
-      .Group__name
-        sample
-      .Group__message
-        hello!!
-    .Group
-      .Group__name
-        sample
-      .Group__message
-        hello!!
+    - current_user.groups.each do |group|
+      = link_to '#', class: "Group" do
+        .Group__name
+          = group.name
+        .Group__message
+          No message
+
+
+   
