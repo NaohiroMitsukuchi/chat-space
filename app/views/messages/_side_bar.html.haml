@@ -10,11 +10,11 @@
           = icon('fas', 'cog')
   .GroupList
     - current_user.groups.each do |group|
-      = link_to '#', class: "Group" do
+      = link_to group_messages_path(group), class: "Group" do
         .Group__name
           = group.name
         .Group__message
-          No message
+          = group.show_last_message
 
 
    
